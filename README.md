@@ -55,5 +55,5 @@ docker exec -it prueba-tecnica-backend node /app/dist/cli.js seed
 **contraseña:** adminuser
 
 ### Usuario externo
-**correo:** extern@example.com
-**contraseña:** externuser
+**correo:** external@example.com
+**contraseña:** externaluser
