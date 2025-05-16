@@ -1,0 +1,73 @@
+# Dependencies
+node_modules
+npm-debug.log
+pnpm-debug.log
+yarn-error.log
+yarn-debug.log
+
+# Build directories
+dist
+dist-ssr
+build
+.output
+stats.html
+
+# Environment and configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Git and version control
+.git
+.gitignore
+.gitattributes
+.github
+
+# Testing files
+coverage
+__tests__
+**/*.spec.ts
+**/*.test.ts
+**/*.spec.tsx
+**/*.test.tsx
+vitest.config.ts
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Docker related
+Dockerfile*
+docker-compose*
+.docker
+
+# Logs
+logs
+*.log
+
+# Cache
+.eslintcache
+.stylelintcache
+.cache
+.npm
+.yarn
+
+# TypeScript
+*.tsbuildinfo
+
+# Others
+README.md
+CHANGELOG.md
+.husky
+.editorconfig
+.eslintrc
+.prettierrc
+postcss.config.js
+vite.config.ts
