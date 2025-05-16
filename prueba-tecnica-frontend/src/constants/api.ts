@@ -1,5 +1,4 @@
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-console.log({ API_BASE_URL })
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api';
 export const AUTH_ENDPOINTS = {
   LOGIN: `${API_BASE_URL}/auth/login`,
   SIGNUP: `${API_BASE_URL}/user/register`,
