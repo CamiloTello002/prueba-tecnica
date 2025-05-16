@@ -42,7 +42,7 @@ O puede que necesites correr ```docker compose``` en vez de ```docker-compose```
 sudo docker compose up -d
 ```
 
-5. Clonar base de datos:
+5. Poblar base de datos:
 ``` 
 docker exec -it prueba-tecnica-backend node /app/dist/cli.js seed
 ```
