@@ -70,4 +70,3 @@ CHANGELOG.md
 .eslintrc
 .prettierrc
 postcss.config.js
-vite.config.ts
