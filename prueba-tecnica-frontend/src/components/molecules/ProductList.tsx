@@ -77,30 +77,30 @@ export const ProductList: React.FC = () => {
     }
   };
 
-  const handleApplyDescription = async () => {
-    if (!selectedProduct || !enhancedDescription) return;
-
-    try {
-      const updatedProduct = {
-        ...selectedProduct,
-        features: enhancedDescription
-      };
-
-      await ProductService.update(selectedProduct.code, updatedProduct);
-
-      // Update the product in the local state
-      setProducts(products.map(product =>
-        product.code === selectedProduct.code
-          ? { ...product, features: enhancedDescription }
-          : product
-      ));
-
-      setIsDescriptionModalOpen(false);
-    } catch (error) {
-      setError('Failed to update product description. Please try again later.');
-      console.error('Error updating product description:', error);
-    }
-  };
+  //const handleApplyDescription = async () => {
+  //  if (!selectedProduct || !enhancedDescription) return;
+  //
+  //  try {
+  //    const updatedProduct = {
+  //      ...selectedProduct,
+  //      features: enhancedDescription
+  //    };
+  //
+  //    await ProductService.update(selectedProduct.code, updatedProduct);
+  //
+  //    // Update the product in the local state
+  //    setProducts(products.map(product =>
+  //      product.code === selectedProduct.code
+  //        ? { ...product, features: enhancedDescription }
+  //        : product
+  //    ));
+  //
+  //    setIsDescriptionModalOpen(false);
+  //  } catch (error) {
+  //    setError('Failed to update product description. Please try again later.');
+  //    console.error('Error updating product description:', error);
+  //  }
+  //};
 
   if (loading) return <div className="flex justify-center p-8">Loading products...</div>;
 
