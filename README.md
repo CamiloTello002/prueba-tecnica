@@ -26,9 +26,12 @@ O puede que necesites correr ```docker compose``` en vez de ```docker-compose```
 sudo docker compose up -d
 ```
 
-4. Clonar base de datos (TO-DO)
+4. Clonar base de datos:
+``` 
+docker exec -it prueba-tecnica-backend node /app/dist/cli.js seed
+```
 
-5. Abrir aplicación en ```localhost:8000```  (o el valor que hayas proveído en ```FRONTEND_PORT``` en vez de```8000``` )
+5. Abrir aplicación en ```localhost:8000``` en el navegador. Si cambiaste el valor de ```FRONTEND_PORT```, entonces abre la aplicación en ``` localhost:FRONTEND_PORT```, donde FRONTEND_PORT es justamente el valor que pusiste
 
 ## Usuarios de prueba:
 ### Administrador
